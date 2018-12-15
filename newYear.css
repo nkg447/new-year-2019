@@ -1,12 +1,12 @@
-/* @import url("https://fonts.googleapis.com/css?family=Montserrat:700|Pacifico"); */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Pacifico");
 @import url("https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe");
 
 body {
-  background-color: #6699cc;
+  background-color: #6ca6c1;
   height: 100%;
   width: 100%;
   text-align: center;
-
+  overflow: hidden;
   font-family: "ZCOOL KuaiLe", cursive;
 }
 
@@ -16,6 +16,7 @@ body {
 }
 .year {
   font-size: 10vw;
+  font-family: "Pacifico", cursive;
   color: white;
   display: flex;
   margin-top: 25vh;
@@ -69,7 +70,7 @@ body {
 
 .hny {
   font-size: 6vw;
-  color: white;
+  color: #29339b;
 
   display: flex;
   justify-content: center;
