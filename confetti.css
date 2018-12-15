@@ -1,0 +1,13 @@
+/* confetti code */
+.confetti {
+  position: initial;
+  height: 250%;
+  overflow: hidden;
+}
+
+@keyframes drop {
+  100% {
+    transform: translateY(100vh) translateX(50vw) rotateY(3600deg)
+      rotateX(2600deg);
+  }
+}
