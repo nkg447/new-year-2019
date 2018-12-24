@@ -1,0 +1,100 @@
+.firework {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  transform-origin: 50% 50%;
+  /* display: none; */
+}
+.firework .left div,
+.firework .right div {
+  position: absolute;
+  perspective: 500px;
+  perspective-origin: 50% 10%;
+  left: 130px;
+  top: 75px;
+  width: 70px;
+  height: 50px;
+  color: orange;
+
+  border-top: 4px solid currentColor;
+  border-radius: 100% 100% 0 0;
+  transform-origin: -30px 25px;
+}
+
+/* .firework .left div::before,
+  .firework .right div::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 25px;
+    width: 8px;
+    height: 8px;
+    background-color: beige;
+    border-radius: 50%;
+    box-shadow: 75px 0px 0 0 white;
+  }
+  .firework .left div::after,
+  .firework .right div::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 27px;
+    width: 4px;
+    height: 4px;
+    background-color: #292826;
+    border-radius: 50%;
+    box-shadow: 75px 0px 0 0 #292826;
+  } */
+
+.firework .right {
+  transform: rotateY(180deg);
+}
+.firework .left div:nth-child(1),
+.firework .right div:nth-child(1) {
+  transform: rotate(55deg);
+}
+.firework .left div:nth-child(2),
+.firework .right div:nth-child(2) {
+  transform: rotate(-35deg);
+}
+.firework .left div:nth-child(3),
+.firework .right div:nth-child(3) {
+  transform: rotate(-5deg);
+}
+
+.firework:nth-child(1) {
+  left: 9vw;
+  top: 35vh;
+  transform: scale(0.5);
+  animation: boom 2s ease-out 2.5s both;
+}
+.firework:nth-child(2) {
+  left: 70vw;
+  top: 40vh;
+  transform: scale(0.7);
+  animation: boom 3s ease-out 2s both;
+}
+.firework:nth-child(3) {
+  left: 15vw;
+  top: 60vh;
+  transform: scale(0.6);
+  animation: boom 2.5s ease-out 2.9s both;
+}
+.firework:nth-child(4) {
+  left: 35vw;
+  top: 23vh;
+  transform: scale(0.3);
+  animation: boom 2s ease-out 3s both;
+}
+.firework:nth-child(5) {
+  left: 75vw;
+  top: 16vh;
+  transform: scale(0.5);
+  animation: boom 3s ease-out 2.5s both;
+}
+
+@keyframes boom {
+  0% {
+    transform: scale(0);
+  }
+}
